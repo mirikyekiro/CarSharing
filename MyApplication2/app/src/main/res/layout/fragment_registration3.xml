@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".registration.FragmentRegistration3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Введите данные"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp">
+        </TextView>
+
+        <EditText
+            android:id="@+id/loginPhone"
+            android:layout_width="300dp"
+            android:layout_height="48sp"
+            android:hint="Телефон"
+            android:textColorHint="#888888"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:textSize="14sp"
+
+            android:inputType="number"/>
+
+        <EditText
+            android:id="@+id/loginPassword"
+            android:layout_width="300dp"
+            android:layout_height="48sp"
+            android:hint="Пароль"
+            android:textColorHint="#888888"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_gravity="center"
+
+            android:inputType="text"/>
+
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Войти"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:backgroundTint="#EFCD25"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/btnToRegistr"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Нет аккаунта? Зарегистрироваться"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:backgroundTint="@android:color/transparent"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+</FrameLayout>

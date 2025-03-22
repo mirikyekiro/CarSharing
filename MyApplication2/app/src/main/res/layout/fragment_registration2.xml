@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".registration.FragmentRegistration2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Введите данные"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp">
+        </TextView>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/loginError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:errorEnabled="true"
+            android:layout_marginTop="25dp">
+
+            <EditText
+                android:id="@+id/editLogin"
+                android:layout_width="300dp"
+                android:layout_height="48sp"
+                android:hint="Логин"
+                android:textColorHint="#888888"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+
+
+                android:inputType="text">
+            </EditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/mailError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:errorEnabled="true">
+            <EditText
+                android:id="@+id/editMail"
+                android:layout_width="300dp"
+                android:layout_height="48sp"
+                android:hint="Почта"
+                android:textColorHint="#888888"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_gravity="start"
+                android:inputType="text">
+            </EditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/phoneError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true"
+            android:layout_gravity="center">
+            <EditText
+                android:id="@+id/editPhone"
+                android:layout_width="300dp"
+                android:layout_height="48sp"
+                android:hint="Телефон"
+                android:textColorHint="#888888"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:inputType="number">
+            </EditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passwordError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:errorEnabled="true">
+            <EditText
+                android:id="@+id/editPassword"
+                android:layout_width="300dp"
+                android:layout_height="48sp"
+                android:hint="Пароль"
+                android:textColorHint="#888888"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_gravity="end"
+                android:inputType="text">
+            </EditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/btnSaveProfile"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Зарегистрироваться"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:backgroundTint="#FF9C8F4E"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/btnToLogin"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Есть аккаунт? Войти"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:backgroundTint="@android:color/transparent"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+</FrameLayout>

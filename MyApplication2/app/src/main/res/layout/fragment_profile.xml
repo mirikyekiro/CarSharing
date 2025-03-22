@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".fragments.ProfileFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="top">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp">
+
+
+
+            <ImageButton
+                android:id="@+id/btnLogOut"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:src="@drawable/ic_logout"
+                android:scaleType="fitXY"
+                android:backgroundTint="@color/white"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image_profile"
+                android:layout_width="100sp"
+                android:layout_height="100sp"
+                android:background="@drawable/icon_profile"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/text_login"/>
+
+            <TextView
+                android:id="@+id/text_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:textSize="32sp"
+                android:layout_marginStart="10sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toRightOf="@id/image_profile"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/text_mail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="mail@mail.ru"
+                android:textSize="18sp"
+                android:layout_marginStart="10sp"
+                app:layout_constraintLeft_toRightOf="@id/image_profile"
+                app:layout_constraintTop_toBottomOf="@id/text_login"/>
+
+            <TextView
+                android:id="@+id/text_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="88888888888"
+                android:textSize="18sp"
+                android:layout_marginStart="10sp"
+                app:layout_constraintLeft_toRightOf="@id/image_profile"
+                app:layout_constraintTop_toBottomOf="@id/text_mail"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:id="@+id/btn_deleteProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Удалить профиль"
+            android:backgroundTint="#9F0000"
+            android:textSize="16sp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+</FrameLayout>

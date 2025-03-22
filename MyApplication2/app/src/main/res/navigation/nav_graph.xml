@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentRegistration1">
+    <fragment
+        android:id="@+id/fragmentRegistration2"
+        android:name="com.example.myapplication.registration.FragmentRegistration2"
+        android:label="fragment_registration2"
+        tools:layout="@layout/fragment_registration2" >
+        <action
+            android:id="@+id/action_fragmentRegistration2_to_fragmentRegistration3"
+            app:destination="@id/fragmentRegistration3"
+            app:enterAnim="@anim/slide_in_top"
+            app:exitAnim="@anim/slide_out_top"
+            app:popEnterAnim="@anim/slide_out_bottom"
+            app:popExitAnim="@anim/slide_in_bottom" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentRegistration1"
+        android:name="com.example.myapplication.registration.FragmentRegistration1"
+        android:label="FragmentRegistration1" >
+        <action
+            android:id="@+id/action_fragmentRegistration1_to_fragmentRegistration2"
+            app:destination="@id/fragmentRegistration2"
+            app:enterAnim="@anim/slide_in_top"
+            app:exitAnim="@anim/slide_out_top"
+            app:popEnterAnim="@anim/slide_out_bottom"
+            app:popExitAnim="@anim/slide_in_bottom" />
+        <action
+            android:id="@+id/action_fragmentRegistration1_to_fragmentRegistration3"
+            app:destination="@id/fragmentRegistration3"
+            app:enterAnim="@anim/slide_in_top"
+            app:exitAnim="@anim/slide_out_top"
+            app:popEnterAnim="@anim/slide_out_bottom"
+            app:popExitAnim="@anim/slide_in_bottom" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentRegistration3"
+        android:name="com.example.myapplication.registration.FragmentRegistration3"
+        android:label="fragment_registration3"
+        tools:layout="@layout/fragment_registration3" >
+        <action
+            android:id="@+id/action_fragmentRegistration3_to_fragmentRegistration2"
+            app:destination="@id/fragmentRegistration2"
+            app:enterAnim="@anim/slide_in_top"
+            app:exitAnim="@anim/slide_out_top"
+            app:popEnterAnim="@anim/slide_out_bottom"
+            app:popExitAnim="@anim/slide_in_bottom" />
+    </fragment>
+</navigation>

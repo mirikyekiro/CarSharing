@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.CardOfCar"
+    android:layout_gravity="bottom"
+    android:background="@color/white"
+    app:cardCornerRadius="14dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="blocksDescendants">
+
+        <TextView
+            android:id="@+id/cocNameCarTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:text="Car_name"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginStart="15sp"
+            android:layout_marginTop="10sp"/>
+
+        <TextView
+            android:id="@+id/cocNumberCarTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="Car_Number"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cocNameCarTV"
+            android:layout_marginStart="15sp"
+            android:background="@drawable/roundcorner"
+            android:paddingLeft="5sp"
+            android:paddingRight="5sp"
+            android:layout_marginTop="5sp"/>
+
+        <TextView
+            android:id="@+id/cocGazCarTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="Car_Guz"
+            app:layout_constraintLeft_toRightOf="@id/cocNumberCarTV"
+            app:layout_constraintTop_toBottomOf="@id/cocNameCarTV"
+            android:layout_marginStart="15sp"
+            android:background="@drawable/roundcorner"
+            android:paddingLeft="5sp"
+            android:paddingRight="5sp"
+            android:layout_marginTop="5sp"/>
+
+        <ImageView
+            android:id="@+id/cocImageCarIV"
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:layout_margin="25sp"
+            android:scaleType="fitCenter"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cocNumberCarTV"/>
+
+        <TextView
+            android:id="@+id/cocPriceCarTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="Car_price"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cocImageCarIV"
+            android:layout_marginStart="15sp"
+            android:layout_marginTop="10sp"/>
+
+        <Button
+            android:id="@+id/btnRent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Забронировать"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:backgroundTint="#EFCD25"
+            app:layout_constraintTop_toBottomOf="@id/cocPriceCarTV"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="10sp"
+            android:layout_marginBottom="25sp"/>
+
+        <ImageButton
+            android:id="@+id/btnClose"
+            android:layout_width="25sp"
+            android:layout_height="25sp"
+            android:src="@drawable/ic_close"
+            android:background="@drawable/roundcorner"
+            android:scaleType="fitXY"
+            android:padding="2sp"
+            android:layout_margin="10sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="10sp"
+            android:layout_marginBottom="25sp"/>
+
+        <TextView
+            android:id="@+id/cocStatusCarTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text=""
+            android:textColor="#FF0000"
+            app:layout_constraintTop_toBottomOf="@id/btnRent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_margin="10sp"
+            android:paddingBottom="25sp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    
+</androidx.cardview.widget.CardView>
